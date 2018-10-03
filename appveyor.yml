@@ -9,6 +9,7 @@ environment:
 
 install:
   # running under CI
+  - git submodule update --init --recursive
   - set CI_TESTING=1
   - '%APPVEYOR_BUILD_FOLDER%\appveyor.bat'
   - 'echo End intall at: & time /t'
