@@ -14,7 +14,7 @@
     SET "PATH=C:\%MSYS2_DIR%\%MSYSTEM%\bin;C:\%MSYS2_DIR%\usr\bin;%PATH%"
     rem Appveyor CI script for Remix
     rem Created by Devopsralf
-    PATH C:\msys64\%MSYSTEM%\bin;C:\msys64\usr\bin;%PATH%
+    rem PATH C:\msys64\%MSYSTEM%\bin;C:\msys64\usr\bin;%PATH%
     rem Upgrade the MSYS2 platform
     bash -lc "pacman --noconfirm --sync --refresh --refresh pacman"
     bash -lc "pacman --noconfirm --sync --refresh --refresh --sysupgrade --sysupgrade"
