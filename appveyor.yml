@@ -1,7 +1,5 @@
-version: 0.1.1.0-{branch}
-
-  environment:
-    matrix:
+environment:
+  matrix:
     - COMPILER: msys2
       PLATFORM: x64
       MSYS2_ARCH: x86_64
@@ -9,14 +7,16 @@ version: 0.1.1.0-{branch}
       MSYSTEM: MINGW64
       BIT: 64
 
-  install:
-    # running under CI
-    - set CI_TESTING=1
-    - '%APPVEYOR_BUILD_FOLDER%\appveyor.bat'
-    - 'echo End intall at: & time /t'
+install:
+  # running under CI
+  - set CI_TESTING=1
+  - '%APPVEYOR_BUILD_FOLDER%\appveyor.bat'
+  - 'echo End intall at: & time /t'
 
-  build_script:
-    - 'echo Nothing to build'
+build_script:
+  - 'echo Nothing to build'
 
-  test_script:
-    - 'echo Nothing to test'
+test_script:
+  - 'echo Nothing to test'
+
+deploy: off
