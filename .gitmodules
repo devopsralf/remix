@@ -1,0 +1,3 @@
+[submodule "external/unbound"]
+	path = external/unbound
+	url = https://github.com/a3rk/unbound.git
